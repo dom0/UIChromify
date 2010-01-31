@@ -1,0 +1,190 @@
+/* CHROMIFOX OS X */
+
+/* TOOLBARS */
+toolbar#nav-bar {
+padding: 3px 3px 0 3px !important;
+}
+window#main-window #feed-button {
+	margin-right: 1px !important;
+}
+#personal-bookmarks .bookmark-item > label {
+margin: 0 0 0 4px !important;
+}
+#navigator-toolbox[mode="full"] #unified-back-forward-button #back-button label.toolbarbutton-text, 
+#navigator-toolbox[mode="full"] #unified-back-forward-button #forward-button label.toolbarbutton-text {
+margin-top: 2px !important;
+}
+toolbox#navigator-toolbox[mode="full"] #back-forward-dropmarker {
+margin-bottom: 18px !important;
+}
+
+/* TABS */
+.tabbrowser-tab .tab-text {
+  font-size: 11px !important;
+  text-shadow: #ccddff 0px 1px 0px !important;
+}
+.tabbrowser-tab[selected="true"] .tab-text {
+  text-shadow: #eef5ff 0px 1px 0px !important;
+}
+
+/* GENERAL CONTROLS */
+.spinbuttons-button {
+	width: 14px;
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+}
+
+/* SIDEBAR */
+#sidebar-box .tabs-closebutton {
+  margin-right: -9px !important;
+}
+
+/* PLACES */
+#placesToolbar {
+	padding-bottom: 1px !important;
+}
+window#places toolbarbutton.tabbable > label {
+padding: 0 4px 0 4px !important;
+}
+window#places #organizeButton {
+margin-left: 7px !important;
+}
+window#places #searchFilter {
+  margin-right: 4px !important;
+}
+#editBMPanel_namePicker {
+-moz-appearance: none !important;
+background: none !important;
+}
+
+/* FULL SCREEN */
+#window-controls #restore-button {
+  list-style-image: url("chrome://browser/skin/Toolbar.png") !important;
+  -moz-image-region: rect(0px 360px 24px 336px) !important;
+  margin-right: 6px !important;
+  margin-left: 3px !important;
+}
+#window-controls #restore-button:hover {
+  -moz-image-region: rect(24px 360px 48px 336px) !important;
+}
+#window-controls #restore-button:hover:active {
+  -moz-image-region: rect(96px 360px 120px 336px) !important;
+}
+#window-controls #minimize-button, 
+#window-controls #close-button {
+  display: none !important;
+}
+
+/* PREFERENCES */
+#BrowserPreferences .paneSelector.chromeclass-toolbar {
+-moz-appearance: none !important;
+background: #dfeaf8 url("chrome://chromifox/skin/images/toolbar-bg.png") repeat-x !important;
+padding: 3px 5px 3px 5px !important;
+border-bottom: 1px solid !important;
+-moz-border-bottom-colors: #b2b2b2 !important;
+}
+#BrowserPreferences .paneSelector.chromeclass-toolbar > radio {
+padding-left: 5px !important;
+padding-right: 5px !important;
+}
+
+/* DOWNLOADS */
+#downloadManager #clearListButton {
+	margin-top: 4px !important;
+}
+#downloadManager #search {
+background: #ebf2fb url("chrome://chromifox/skin/images/status-bg.png") !important;
+margin-right: 0 !important;
+padding: 1px 10px 1px 1px !important;
+}
+
+/* EDITBOOKMARKOVERLAY.CSS */
+#editBMPanel_folderTree {
+   margin: 6px 0 !important;
+}
+.expander-up,
+.expander-down {
+  -moz-appearance: none !important;
+  margin-left: 8px !important;
+  padding: 0 !important;
+  min-width: 0 !important;
+  padding-left: 10px !important;
+  padding-right: 0px !important;
+}
+.expander-up {
+	list-style-image: url("chrome://chromifox/skin/images/expander-open.png") !important;
+}
+.expander-down {
+	list-style-image: url("chrome://chromifox/skin/images/expander-closed.png") !important;
+}
+.expander-down:hover:active {
+	list-style-image: url("chrome://chromifox/skin/images/expander-closed-active.png") !important;
+}
+.expander-up:hover:active {
+	list-style-image: url("chrome://chromifox/skin/images/expander-open-active.png") !important;
+}
+#editBMPanel_namePicker[droppable="false"] {
+  -moz-appearance: none !important;
+  margin: 0px !important;
+  border: none !important;
+  padding: 0px !important;
+  height: auto !important;
+}
+#editBMPanel_namePicker[droppable="false"] > .menulist-dropmarker {
+  display: none !important;
+}
+#editBMPanel_namePicker[droppable="false"] > .menulist-editable-box {
+  -moz-appearance: textfield !important;
+  cursor: text !important;
+  margin: 4px 4px !important;
+  border: 3px solid !important;
+  -moz-border-top-colors: transparent #888888 #000000 !important;
+  -moz-border-right-colors: transparent #FFFFFF #000000 !important;
+  -moz-border-bottom-colors: transparent #FFFFFF #000000 !important;
+  -moz-border-left-colors: transparent #888888 #000000 !important;
+  -moz-border-radius-topright: 2px !important;
+  -moz-border-radius-bottomleft: 2px !important;
+  padding: 0 !important;
+  background-color: -moz-Field !important;
+  color: -moz-FieldText !important;
+}
+#editBMPanel_namePicker[droppable="false"][disabled="true"] > .menulist-editable-box {
+  cursor: default;
+  -moz-border-top-colors: transparent ThreeDShadow -moz-Dialog !important;
+  -moz-border-right-colors: transparent ThreeDShadow -moz-Dialog !important;
+  -moz-border-bottom-colors: transparent ThreeDShadow -moz-Dialog !important;
+  -moz-border-left-colors: transparent ThreeDShadow -moz-Dialog !important;
+  color: GrayText !important;
+}
+#editBMPanel_namePicker[droppable="false"] > .menulist-editable-box > html|*.textbox-input {
+  margin: 0px !important;
+  border: none !important;
+  padding: 0px !important;
+  background-color: inherit !important;
+  color: inherit !important;
+  font: inherit !important;
+}
+#editBMPanel_namePicker[droppable="false"] > .menulist-dropmarker {
+  display: none !important;
+}
+#editBMPanel_namePicker[droppable="false"] > menupopup {
+  display: none !important;
+}
+
+/* ADD-ONS */
+#extensionsManager #userstyles-view > image {
+  list-style-image: url("chrome://chromifox/skin/images/stylish.png") !important;
+  display: block !important;
+  -moz-image-region: auto !important;
+}
+#extensionsManager #styles-container {
+  overflow: hidden !important;
+}
+#extensionsManager {
+  padding-bottom: 6px !important;
+}
+
+/* ERROR CONSOLE */
+#JSConsoleWindow #ToolbarMode {
+-moz-appearance: -moz-mac-unified-toolbar !important;
+}

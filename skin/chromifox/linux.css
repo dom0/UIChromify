@@ -1,0 +1,85 @@
+/* CHROMIFOX LINUX */
+
+/* LOCATION BAR */
+#urlbar {
+-moz-appearance: none !important;
+background: none !important;
+}
+#urlbar .autocomplete-textbox-container {
+-moz-appearance: none !important;
+background: none !important;
+background: #fff !important;
+-moz-border-radius-topleft: 7px !important;
+-moz-border-radius-bottomleft: 7px !important;
+}
+#urlbar .textbox-input-box, 
+#searchbar .autocomplete-textbox.textbox-input {
+-moz-appearance: none !important;
+font-size: 14px !important;
+padding-bottom: 0 !important;
+}
+#identity-box.verifiedDomain > hbox, 
+#identity-box.verifiedDomain:hover > hbox, 
+#identity-box.verifiedIdentity > hbox, 
+#identity-box.verifiedIdentity:hover > hbox {
+  font-size: 14px !important;
+}
+#urlbar .autocomplete-history-dropmarker {
+padding-top: 6px !important;
+padding-bottom: 6px !important;
+}
+#urlbar-search-splitter {
+-moz-appearance: none !important;
+}
+#PopupAutoCompleteRichResult {
+-moz-appearance: none !important;
+border: 1px solid !important;
+-moz-border-top-colors: #b2b2b2 !important;
+-moz-border-right-colors: #b2b2b2 !important;
+-moz-border-bottom-colors: #b2b2b2 !important;
+-moz-border-left-colors: #b2b2b2 !important;
+}
+
+/* BOOKMARKS PANEL */
+#editBMPanel_namePicker {
+-moz-appearance: none !important;
+background: none !important;
+border: 0 !important;
+padding: 0 !important;
+}
+
+/* SIDEBAR */
+#main-window #sidebar-box { 
+  border-top: 1px solid;
+  -moz-border-top-colors: #b2b2b2 ThreeDHighlight;
+}
+#main-window #sidebar-box sidebarheader {
+  border-bottom: 2px solid;
+  -moz-border-bottom-colors: ThreeDHighlight #b2b2b2;
+}
+#main-window #sidebar-box sidebarheader, 
+page#bookmarksPanel popup#placesContext + hbox[align="center"], 
+page#history-panel popup#placesContext  + hbox[align="center"] {
+   padding-left: 2px !important;
+}
+page#bookmarksPanel textbox#search-box, 
+page#history-panel textbox#search-box {
+  -moz-appearance: none !important;
+  border: 1px solid #c5cde2 !important;
+  -moz-border-radius: 5px !important;
+  -moz-border-top-colors: #c5cde2;
+  -moz-border-right-colors: #c5cde2;
+  -moz-border-bottom-colors: #c5cde2;
+  -moz-border-left-colors: #c5cde2;
+}
+page#history-panel #viewButton {
+  -moz-appearance: none !important;
+  background: #f0f4fa url("chrome://chromifox/skin/images/status-bg.png") repeat-x !important;
+  border: 1px solid !important;
+  padding: 2px 5px 3px 4px !important;
+  -moz-border-top-colors: #bcd !important;
+  -moz-border-right-colors: #bcd !important;
+  -moz-border-bottom-colors: #bcd !important;
+  -moz-border-left-colors: #bcd !important;
+  -moz-border-radius: 5px !important; 
+}

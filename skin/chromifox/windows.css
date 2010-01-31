@@ -1,0 +1,90 @@
+/* CHROMIFOX WINDOWS */
+
+/* GENERAL CONTROLS */
+window, page, dialog, wizard, prefwindow, caption {
+  background-color: #dfeaf8 !important;
+  color: #000 !important;
+}
+groupbox {
+  -moz-appearance: none !important;
+  border: 1px solid #b2b2b2 !important;
+  -moz-border-radius: 5px !important;
+  padding: 5px !important;
+}
+image.textbox-search-icon {
+  list-style-image: url("chrome://chromifox/skin/images/search-windows.png") !important;
+}
+
+/* BACK/FORWARD DROP-DOWN */
+#navigator-toolbox toolbarbutton#back-forward-dropmarker > image.toolbarbutton-icon {
+  padding: 7px 0 7px 3px !important;
+}
+
+/* LOCATION BAR */
+#urlbar-container {
+  margin-left: 3px !important;
+} 
+#urlbar-container:-moz-system-metric(windows-classic) {
+  margin-left: 0 !important;
+} 
+#identity-box #identity-icon-label {
+  padding-bottom: 2px !important;
+}
+
+/* TABS */
+.tabbrowser-tab .tab-text {
+	padding-left: 2px !important;
+}
+
+/* SIDEBAR */
+#main-window #sidebar-box { 
+  border-top: 1px solid;
+  -moz-border-top-colors: #b2b2b2 #fff;
+}
+#main-window #sidebar-box sidebarheader {
+  border-bottom: 2px solid;
+  -moz-border-bottom-colors: #fff #b2b2b2;
+}
+#main-window #sidebar-box sidebarheader, 
+page#bookmarksPanel popup#placesContext + hbox[align="center"], 
+page#history-panel popup#placesContext  + hbox[align="center"] {
+   padding-left: 2px !important;
+}
+page#bookmarksPanel textbox#search-box, 
+page#history-panel textbox#search-box {
+  -moz-appearance: none !important;
+  border: 1px solid #c5cde2 !important;
+  -moz-border-radius: 5px !important;
+  -moz-border-top-colors: #c5cde2;
+  -moz-border-right-colors: #c5cde2;
+  -moz-border-bottom-colors: #c5cde2;
+  -moz-border-left-colors: #c5cde2;
+}
+page#history-panel #viewButton {
+  -moz-appearance: none !important;
+  background: #f0f4fa url("chrome://chromifox/skin/images/status-bg.png") repeat-x !important;
+  border: 1px solid !important;
+  padding: 0 3px 0 4px !important;
+  -moz-border-top-colors: #bcd !important;
+  -moz-border-right-colors: #bcd !important;
+  -moz-border-bottom-colors: #bcd !important;
+  -moz-border-left-colors: #bcd !important;
+  -moz-border-radius: 5px !important; 
+  height: 23px !important;
+  overflow: hidden !important;
+}
+
+/* compact menu button */
+toolbar > toolbaritem > toolbarbutton#cm-menu.toolbarbutton-1 > image.toolbarbutton-icon {
+	background: none !important;
+	width: auto !important;
+	height: auto !important;
+	padding: 0 !important;
+	opacity: 1.0 !important;
+}
+
+/* windows classic: back-forward menu fix */
+#main-window:-moz-system-metric(windows-classic) #back-forward-dropmarker > menupopup {
+	border: 2px solid !important;
+	padding: 1px !important;
+}
