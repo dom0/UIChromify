@@ -21,16 +21,6 @@
   border: 1px solid #A2B5D5 !important;
 }
 
-.pb-container {
-  border: 1px solid white; 
-  width: 150px; 
-  height: 5px;
-}
-
-#hgb-progressbar {
-  width: 0px; 
-}
-
 .label {
   font-size: .95em;
   margin-left: -3px;
@@ -47,6 +37,23 @@
 }
 .mybutton > image {
   margin-top: -10px;
-  padding: 0 !important;
-  height: 18px !important;
+}
+
+.closebtn {
+  list-style-image: url("chrome://chromifox/skin/images/btn-close.png");
+}
+.minimizebtn {
+  list-style-image: url("chrome://chromifox/skin/images/btn-minimize.png");
+}
+.maximizebtn {
+  list-style-image: url("chrome://chromifox/skin/images/btn-maximize.png");
+}
+.closebtn:hover {
+  list-style-image: url("chrome://chromifox/skin/images/btn-close-hover.png");
+}
+.minimizebtn:hover {
+  list-style-image: url("chrome://chromifox/skin/images/btn-minimize-hover.png");
+}
+.maximizebtn:hover {
+  list-style-image: url("chrome://chromifox/skin/images/btn-maximize-hover.png");
 }

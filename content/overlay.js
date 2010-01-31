@@ -53,20 +53,17 @@ window.addEventListener("load",function(event){
   var bt1 = document.createElement("toolbarbutton");
   bt1.setAttribute("id","bt1");
   bt1.setAttribute("oncommand","window.minimize()");
-  bt1.setAttribute("image","chrome://uichromify/content/btn-minimize.png");
-  bt1.setAttribute("class","mybutton");
+  bt1.setAttribute("class","mybutton minimizebtn");
 
   var bt2 = document.createElement("toolbarbutton");
   bt2.setAttribute("id","bt2");
   bt2.setAttribute("oncommand","window.maximize()");
-  bt2.setAttribute("image","chrome://uichromify/content/btn-maximize.png");
-  bt2.setAttribute("class","mybutton");
+  bt2.setAttribute("class","mybutton maximizebtn");
 
   var bt3 = document.createElement("toolbarbutton");
   bt3.setAttribute("id","bt3");
   bt3.setAttribute("oncommand","window.close()");
-  bt3.setAttribute("image","chrome://uichromify/content/btn-close.png");
-  bt3.setAttribute("class","mybutton");
+  bt3.setAttribute("class","mybutton closebtn");
 
   var sp = document.createElement("spacer");
   sp.setAttribute("class","mybutton");
