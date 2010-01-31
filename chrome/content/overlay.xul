@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="overlay.css"?>
+
+<overlay id="uichromify" 
+  xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" 
+  xmlns:html="http://www.w3.org/1999/xhtml">
+
+  <script type="application/x-javascript" src="overlay.js"/>
+  <script type="application/x-javascript" src="statusbar-replacer.js"/>
+
+  <popupset id="mainPopupSet">
+    <tooltip id="hgb-pb" class="tooltip">
+      <div class="div-notify" style="-moz-border-radius-topleft: 5px; 
+        -moz-border-radius-topright: 0px; padding-bottom: 5px; padding-top: 6px;">
+        <div class="pb-container" id="border">
+          <div id="hgb-progressbar"/>
+        </div>
+      </div>
+    </tooltip>
+    <tooltip id="hgb-lu" class="tooltip">
+      <div class="div-notify">
+        <label id="hgb-linkurl" class="label"/>
+      </div>
+    </tooltip>
+  </popupset>
+
+  <hbox id="browser" style="border: 3px solid #98bce7">
+  </hbox>
+
+  <!--hbox flex="1" style="background-color: red"/-->
+  <hbox flex="1" id="anchor" style="height: 10px; background-color: red"/>
+  
+  <vbox id="browser-bottombox">
+    <!--hbox flex="1" id="anchor" style="height: 1px; background-color: red"/-->
+  </vbox>
+</overlay>

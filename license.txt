@@ -1,0 +1,4 @@
+The developer of Chromifox is "falconer" on Mozilla Add-ons. Chromifox is a free, open source project published under the MPL/GPL/LGPL tri-license. Some of the included toolbar icons in Chromifox originally appeared in the Chromium web browser, which is the open source project behind Google Chrome. However, Chromifox is an independent project that has nothing to do with Google. The authors of Chromium licensed it under the BSD license. As such, it is believed that the use of the Chromium toolbar icons in Chromifox, and other free, open source projects, is fair and protected under the BSD license. Chromifox is a 100% non-profit project; no one may ever charge money for any part of Chromifox in any way. You may redistribute this project freely using any similar open source terms.
+
+Updates and more information:
+http://tylerc.com/falconer/

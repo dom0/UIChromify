@@ -1,0 +1,12 @@
+content uichromify     chrome/content/
+overlay chrome://browser/content/browser.xul  chrome://uichromify/content/overlay.xul
+
+skin    chromifox      Chromifox   jar:chrome/chromifox.jar!/chromifox/
+skin    global         Chromifox   jar:chrome/chromifox.jar!/linux/global/
+
+#skin    global         Chromifox   jar:chrome/chromifox.jar!/windows/global/	os=WINNT
+#skin    global         Chromifox   jar:chrome/chromifox.jar!/osx/global/	os=Darwin
+
+#skin    mozapps        Chromifox   jar:chrome/chromifox.jar!/windows/mozapps/
+#skin    browser        Chromifox   jar:chrome/chromifox.jar!/windows/browser/
+#skin    communicator   Chromifox   jar:chrome/chromifox.jar!/windows/communicator/
