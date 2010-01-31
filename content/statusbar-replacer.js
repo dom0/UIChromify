@@ -40,7 +40,6 @@ var HGBStatusBar = {
 
   init: function() {
     HGBStatusBar._closePopup("hgb-lu");
-    HGBStatusBar._changeSBColor();
 
     //CUSTOM LINK URL
     HGBStatusBar.origOverLink = XULBrowserWindow.setOverLink;
@@ -52,7 +51,7 @@ var HGBStatusBar = {
         str += "...";
       }
       if ((link == "")||(!link)||(link == undefined)){
-        HGBStatusBar.last_timeout_id = setTimeout(function(){HGBStatusBar._closePopup("hgb-lu")}, 500);
+        HGBStatusBar.last_timeout_id = setTimeout(function(){HGBStatusBar._closePopup("hgb-lu")}, 300);
       } else {
         document.getElementById("hgb-linkurl").value = str;
         clearTimeout(HGBStatusBar.last_timeout_id);
@@ -63,15 +62,6 @@ var HGBStatusBar = {
   },
 
 
-  _changeSBColor : function(){
-    var p = document.querySelectorAll("div.div-notify");
-    for ( var i = 0; i < p.length; i++ ) {
-      p[i].style.backgroundColor = "#DBE8F9";
-      p[i].style.color = "#3E5C91";
-      p[i].style.border = "1px solid #A2B5D5!important";
-    }
-  },
- 
   _openPopup : function(){
     var anchor = document.getElementById("anchor");
     var x = 3;

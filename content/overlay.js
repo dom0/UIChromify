@@ -52,24 +52,36 @@ window.addEventListener("load",function(event){
   HGBStatusBar.init();
   var bt1 = document.createElement("toolbarbutton");
   bt1.setAttribute("id","bt1");
-  bt1.setAttribute("label","_");
-  bt1.setAttribute("orient","vertical");
   bt1.setAttribute("oncommand","window.minimize()");
+  bt1.setAttribute("image","chrome://uichromify/content/btn-minimize.png");
+  bt1.setAttribute("class","mybutton");
 
   var bt2 = document.createElement("toolbarbutton");
   bt2.setAttribute("id","bt2");
-  bt2.setAttribute("label","o");
-  bt2.setAttribute("orient","vertical");
   bt2.setAttribute("oncommand","window.maximize()");
+  bt2.setAttribute("image","chrome://uichromify/content/btn-maximize.png");
+  bt2.setAttribute("class","mybutton");
 
   var bt3 = document.createElement("toolbarbutton");
   bt3.setAttribute("id","bt3");
-  bt3.setAttribute("label","X");
-  bt3.setAttribute("orient","vertical");
   bt3.setAttribute("oncommand","window.close()");
+  bt3.setAttribute("image","chrome://uichromify/content/btn-close.png");
+  bt3.setAttribute("class","mybutton");
 
+  var sp = document.createElement("spacer");
+  sp.setAttribute("class","mybutton");
+  sp.setAttribute("width","5px");
+  gBrowser.mTabContainer.parentNode.appendChild(sp);
   gBrowser.mTabContainer.parentNode.appendChild(bt1);
+  var sp = document.createElement("spacer");
+  sp.setAttribute("class","mybutton");
+  sp.setAttribute("width","2px");
+  gBrowser.mTabContainer.parentNode.appendChild(sp);
   gBrowser.mTabContainer.parentNode.appendChild(bt2);
+  var sp = document.createElement("spacer");
+  sp.setAttribute("class","mybutton");
+  sp.setAttribute("width","2px");
+  gBrowser.mTabContainer.parentNode.appendChild(sp);
   gBrowser.mTabContainer.parentNode.appendChild(bt3);
 
 }, false);
