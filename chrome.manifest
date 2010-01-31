@@ -11,6 +11,6 @@ overlay  chrome://browser/content/browser.xul  chrome://uichromify/content/overl
 #skin    browser        Chromifox   jar:chrome/chromifox.jar!/windows/browser/
 #skin    communicator   Chromifox   jar:chrome/chromifox.jar!/windows/communicator/
 
-skin    chromifox      Chromifox   skin/chromifox/
-skin    global         Chromifox   skin/linux/global/
-skin    browser        Chromifox   skin/windows/browser/
+skin    chromifox      classic/1.0   skin/chromifox/
+skin    global         classic/1.0   skin/linux/global/
+skin    browser        classic/1.0   skin/windows/browser/
