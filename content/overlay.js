@@ -33,13 +33,9 @@ window.addEventListener("load",function(event){
 
   Application.console.log("INITIALIZED"); 
   document.getElementById("main-window").setAttribute("hidechrome", "true");
-  /* ** BARRA DEL TITOLO ** */
-  var tit = document.createElement("titlebar");
-  tit.setAttribute("height","5px");
-  tit.style.backgroundColor="#98bce7";
-  tit.style.cursor="move";
-  gBrowser.mTabBox.insertBefore(tit,gBrowser.mTabBox.firstChild);
-  /* ********************** */
+  gBrowser.mTabBox.style.borderTop="5px solid #98bce7";
+  //gBrowser.mTabBox.style.MozBorderRadiusTopleft="15px";
+  //gBrowser.mTabBox.style.MozBorderRadiusTopright="15px";
 
   document.getElementById("navigator-toolbox").setAttribute("collapsed","true");
   document.getElementById("browser-bottombox").setAttribute("collapsed","true");
@@ -50,6 +46,7 @@ window.addEventListener("load",function(event){
   gBrowser.mTabBox.insertBefore(find,gBrowser.mTabBox.lastChild);
 
   HGBStatusBar.init();
+
   var bt1 = document.createElement("toolbarbutton");
   bt1.setAttribute("id","bt1");
   bt1.setAttribute("oncommand","window.minimize()");
@@ -57,8 +54,8 @@ window.addEventListener("load",function(event){
 
   var bt2 = document.createElement("toolbarbutton");
   bt2.setAttribute("id","bt2");
-  bt2.setAttribute("oncommand","window.maximize()");
-  bt2.setAttribute("class","mybutton maximizebtn");
+  bt2.setAttribute("oncommand","window.toggle()");
+  Application.console.log(window.windowState);
 
   var bt3 = document.createElement("toolbarbutton");
   bt3.setAttribute("id","bt3");
@@ -82,4 +79,28 @@ window.addEventListener("load",function(event){
   gBrowser.mTabContainer.parentNode.appendChild(bt3);
 
 }, false);
+
+window.addEventListener("resize", winResize, false);
+
+function winResize(){
+if (window.windowState == 3)
+  document.getElementById("bt2").setAttribute("class", "mybutton maximizebtn");
+else
+  document.getElementById("bt2").setAttribute("class", "mybutton restorebtn");
+}
+
+window.toggle = function(){
+  if (window.windowState == 1)
+    window.restore();
+  else 
+    window.maximize();
+}
+
+
+
+
+
+
+
+
 

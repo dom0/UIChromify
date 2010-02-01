@@ -57,3 +57,9 @@
 .maximizebtn:hover {
   list-style-image: url("chrome://chromifox/skin/images/btn-maximize-hover.png");
 }
+.restorebtn {
+  list-style-image: url("chrome://chromifox/skin/images/btn-restore.png");
+}
+.restorebtn:hover {
+  list-style-image: url("chrome://chromifox/skin/images/btn-restore-hover.png");
+}
